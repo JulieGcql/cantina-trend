@@ -19,7 +19,7 @@ export default class About extends Component {
 					<div className="textAbout">
 					N'hésitez pas à retrouver toute la communauté <span class="importantAbout">Cantina Trend</span> sur nos réseaux sociaux !
 					</div>
-					<img src={lunch} className="picAbout"/>
+					<img src={lunch} className="picAbout" alt="repas"/>
 				</div>
 				<Footer/>
       </div>
