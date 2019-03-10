@@ -1,0 +1,309 @@
+body {
+  font-family: 'Noto Sans', sans-serif;
+  color: #343A40!important;
+}
+
+.hoverable:hover,
+.hoverable:focus {
+text-decoration: none;
+cursor: pointer;
+}
+
+
+.btnResto {
+  border: 2px #343A40 solid;
+  background-color: transparent;
+  border-radius: 4px;
+  padding: 8px;
+  font-weight:700;
+}
+
+
+// ------- NAVBAR ----- //
+
+.titleSite {
+  letter-spacing: 2px;
+}
+
+// ------- HOME ------- //
+
+.containerHeader {
+    text-align: center;
+    padding: 20px;
+  }
+  .logo {
+    height: 80px;
+  }
+  .textHome {
+    a {
+      color: #343A40!important;
+    }
+    a:hover {
+      color: #343A40!important;
+    }
+    .titleHome{
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+    .descriptionHome {
+      margin-top: 2vh;
+      margin-bottom: 4vh;
+      .textHeader {
+        font-size:18px;
+      }
+    }
+  }
+
+  
+
+// ------ LIST ------- //
+
+.containerList {
+  min-height:100%;
+  margin:0 auto;
+  position:relative;
+  padding: 16vw;
+  padding-top:0vw;
+  margin-bottom: 2vh;
+  margin-top: 4vh;
+  .restoList {
+    list-style: none;
+  }
+  .title {
+    font-size: 23px;
+    margin-bottom: 5vh;
+  }
+}
+
+.cardResto {
+  background: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding-bottom: 3vh;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  .headerResto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #343A40;
+    color: white;
+    padding-top:1vh;
+    padding-bottom: 1vh;
+    p {
+      margin-top:0;
+      margin-bottom: 0;
+    }
+    .nameResto {
+      font-weight: bold;
+      font-size: 22px;
+    }
+    .logoResto {
+      width: 50px;
+      height: 50px;
+      margin-left: 2vw;
+    }
+  }
+  
+  .showInfos {
+    margin-bottom: 3vh;
+    .containerBtn {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    }
+    .showBtn {
+      width: 4vw;
+      margin-bottom:2vh;
+    }
+    .description {
+      font-style: italic;
+      padding-left: 2vw;
+      padding-right: 2vw;
+    }
+    .note {
+      font-weight: bold;
+    }
+    .hiddenInfos {
+      display:none;
+      animation: 3s ease-in-out; 
+    }
+  }
+}
+
+// ------- SPINNER ------- //
+.spinnerStyle {
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+  .waitingText {
+    font-size:18px;
+    font-style: italic;
+  }
+  .sweet-loading {
+    margin-top: 2vh;
+    .css-ktja0h-style-style {
+      border-color: black;
+      border-bottom-color: transparent;
+    }
+  }
+}
+
+// ------- ABOUT --------- //
+
+.containerAbout {
+  padding: 5vw;
+  padding-top: 2vh;
+
+  .textAbout {
+    font-size:18px;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    .importantAbout {
+      font-weight: bold;
+    }
+  }
+  .picAbout {
+    width:33vw;
+  }
+}
+
+// ------ FOOTER -------- //
+
+.footer {
+  bottom:0;
+  width:100%;
+  background-color: #343A40;
+  color: white;
+  height: 20vh;
+  position:absolute;
+  .footerText {
+    padding: 2vw;
+    .footerTitle {
+      font-weight:bold;
+      letter-spacing: 2px;
+    }
+    .footerItalic {
+      font-style: italic;
+    }
+  }
+  .socialIcons {
+    display:flex;
+    justify-content: space-around;
+    margin-top:1vh;
+    img {
+      width: 30px;
+      height: 100%;
+    }
+  }
+}
+
+// ----- RESPONSIVE ------ //
+
+@media only screen and (max-width:767px) {
+  .containerHeader {
+    height: 100vh;
+    .descriptionHome {
+      margin-top: 4vh!important;
+      .textHeader {
+        font-size:15px!important;
+      }
+    }
+  }
+  
+  .containerList {
+    padding: 10vw;
+    padding-top: 0vw;
+    .title {
+      font-size: 20px;
+      padding-top: 2vh;
+      padding-bottom: 2vh;
+    }
+    .headerResto {
+      display: flex;
+      justify-content: center;
+      .nameResto {
+        font-size: 18px;
+      }
+    }
+    .showInfos {
+      .showBtn {
+        width: 10vw;
+      }
+    }
+  }
+
+  .containerAbout {
+    height:100vh;
+    .textAbout {
+      font-size: 15px;
+    }
+    .picAbout {
+      width: 275px;
+
+    }
+  }
+  
+  .footer{
+    position: sticky;
+    height: 100px;
+    .footerTitle {
+      font-size: 15px;
+    }
+    .footerItalic {
+      font-size: 13px;
+    }
+    .socialIcons {
+      margin-top: 0vh;
+      img {
+        width: 30px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .footer {
+    height: 20vh;
+    .footerText {
+      padding: 1vw
+    }
+    .socialIcons {
+      img {
+        width: 3vw;
+        margin-top:0vh;
+      }
+    }
+  }
+  .containerAbout {
+    .picAbout {
+      width:33vw;
+    }
+  }
+}
+
+
+@media only screen and (max-width: 767px) and (orientation: landscape) {
+  .footer {
+    height: 150px;
+    .socialIcons {
+      img {
+        width: 30px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .containerHeader {
+    height: 100vh;
+    margin-top:11vh!important;
+  }
+  .containerAbout {
+    height: 100vh;
+    .picAbout {
+      width:500px;
+    }
+  }
+  .footer {
+    height: 150px;
+    position: sticky;
+  }
+}
