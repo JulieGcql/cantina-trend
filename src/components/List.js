@@ -22,14 +22,11 @@ export default class List extends Component {
       this.setState({
         isLoaded: true,
         restosList: data.restaurants,
-      });
-    },
-    (error) => {
-      this.setState({
-        isLoaded: true,
-        error
-      });
+      })
     })
+    .catch(error => {
+      console.log(error);
+    });
   }
 
   componentDidMount = () => {
@@ -44,8 +41,8 @@ export default class List extends Component {
     let {isLoaded} = this.state;
     if (!isLoaded) {
       return (
-        <div class="spinnerStyle" style={{height:'100vh'}}>
-          <div class="waitingText">Patience, nous concoctons votre liste de restaurants !<br />
+        <div className="spinnerStyle" style={{height:'100vh'}}>
+          <div className="waitingText">Patience, nous concoctons votre liste de restaurants !<br />
           Si le temps de chargement est trop long, veuillez rafraichir la page.</div>
           <Spinner />
         </div>
@@ -56,7 +53,7 @@ export default class List extends Component {
         <div>
           <NavBar />
           <div className="containerList">
-            <h3 class="title">Quels sont les restaurants à proximité?</h3>
+            <h3 className="title">Quels sont les restaurants à proximité?</h3>
 
             {this.state.restosList && this.state.restosList.map((resto, index) => {
               return(

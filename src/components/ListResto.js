@@ -14,9 +14,9 @@ export default class ListResto extends Component {
   render() {
     const change = this.state.on ? "hiddenInfos" : "showInfos";
     return (
-      <div class="containerCards">
-        <div class="col-xl-8 col-lg-8 col-md-10 col-sm-12 col-12">
-          <div class="cardResto">
+      <div className="containerCards">
+        <div className="col-xl-8 col-lg-8 col-md-10 col-sm-12 col-12">
+          <div className="cardResto">
             <div className="headerResto">
               <p className="nameResto">{this.props.name}</p>
               <img className="logoResto" src={this.props.logo} alt={this.props.name}/>

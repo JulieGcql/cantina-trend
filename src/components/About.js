@@ -11,7 +11,7 @@ export default class About extends Component {
 				<NavBar />
 				<div className="containerAbout">
 					<div className="textAbout">
-					<span class="importantAbout">Cantina Trend</span> met en relation les restaurants se trouvant à proximité des utilisateurs afin de vous proposer une liste d'établissements qui puissent satisfaire votre estomac à tout moment, peu importe où vous vous situez.
+					<span className="importantAbout">Cantina Trend</span> met en relation les restaurants se trouvant à proximité des utilisateurs afin de vous proposer une liste d'établissements qui puissent satisfaire votre estomac à tout moment, peu importe où vous vous situez.
 					</div>
 					<div className="textAbout">
 					Nous recessons tous les restaurateurs de toutes spécialités confondues afin que vous puissiez combler toutes vos envies.
